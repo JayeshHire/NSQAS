@@ -1,0 +1,4 @@
+.venv/
+logs/
+project/logs/
+project/.streamlit/secrets.toml
