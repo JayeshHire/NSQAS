@@ -8,7 +8,10 @@ if st.button("sign in"):
     else:
         st.write(f"Hello, {st.user.name}")
         
+if st.user is None:
+    st.write("user not logged in")
 
+st.write(f"login status: {st.user.is_logged_in}")
 # if st.button("logout"):
 #     st.logout()
 #     st.write("logging out the user")
