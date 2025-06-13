@@ -66,10 +66,13 @@ pages_unsigned_user = {
     ],
 }
 
+# if st.user: 
 if st.user.is_logged_in:
     # Handle user database entry after successful login
-    handle_user_login()
-    pg = st.navigation(pages_signed_user)
+        handle_user_login()
+        pg = st.navigation(pages_signed_user)
+    # else :
+    #     pg = st.navigation(pages_unsigned_user)
 else:
     pg = st.navigation(pages_unsigned_user)
     
@@ -77,16 +80,16 @@ else:
 pg.run()
 
 with st.sidebar:
-    if st.user.is_logged_in:
-        st.button("logout",
-                  on_click=st.logout)
-    else:
-        st.button(
-        "login", 
-        help="login using google",
-        on_click=st.login,
-        args=("google",)
-        )
+        if st.user.is_logged_in:
+            st.button("logout",
+                      on_click=st.logout)
+        else:
+            st.button(
+            "login", 
+            help="login using google",
+            on_click=st.login,
+            args=("google",)
+            )
 
 
     

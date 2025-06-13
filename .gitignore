@@ -2,3 +2,4 @@
 logs/
 project/logs/
 project/.streamlit/secrets.toml
+.streamlit/secrets.toml
