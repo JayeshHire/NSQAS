@@ -91,6 +91,7 @@ with st.sidebar:
             args=("google",)
             )
 
+st.write(f"user login status: {st.user.is_logged_in}")
 
 if st.user is not None:
     st.write(f"Welcome, {st.user}!")
