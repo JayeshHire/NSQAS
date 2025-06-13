@@ -38,7 +38,7 @@ def handle_user_login():
 
 def user_login():
     st.login("google")
-    
+
 
 # st.page_link("data_consumer_dashboard.py", label="Page 1", icon="1️⃣")
 # st.page_link("oauth.py", label="Page 2", icon="2️⃣")
@@ -92,7 +92,3 @@ with st.sidebar:
             args=("google",)
             )
 
-st.write(f"user login status: {st.user.is_logged_in}")
-
-if st.user is not None:
-    st.write(f"Welcome, {st.user}!")
