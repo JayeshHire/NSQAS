@@ -93,4 +93,4 @@ with st.sidebar:
 
 
 if st.user is not None:
-    st.write(f"Welcome, {st.user.email}!")
+    st.write(f"Welcome, {st.user}!")
