@@ -38,6 +38,7 @@ def handle_user_login():
 
 def user_login():
     st.login("google")
+    
 
 # st.page_link("data_consumer_dashboard.py", label="Page 1", icon="1️⃣")
 # st.page_link("oauth.py", label="Page 2", icon="2️⃣")

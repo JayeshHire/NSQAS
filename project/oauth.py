@@ -1,12 +1,12 @@
 import streamlit as st
 
 
-# if st.button("sign in"):
+if st.button("sign in"):
 
-#     if not st.user.is_logged_in:
-#         st.login("google")
-#     else:
-#         st.write(f"Hello, {st.user.name}")
+    if not st.user.is_logged_in:
+        st.login("google")
+    else:
+        st.write(f"Hello, {st.user.name}")
         
 
 # if st.button("logout"):
