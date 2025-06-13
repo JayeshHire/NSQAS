@@ -14,7 +14,7 @@ SQLALCHEMY_DATABASE_URL = f"sqlite:///{db_path}"
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL,
     poolclass=QueuePool,
-    pool_size=5,  # Number of connections to maintain
+    pool_size=20,  # Number of connections to maintain
     max_overflow=10,  # Maximum number of connections to create beyond pool_size
     pool_timeout=30,  # Timeout in seconds for getting a connection from the pool
     pool_recycle=1800,  # Recycle connections after 30 minutes
