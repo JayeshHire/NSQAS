@@ -92,4 +92,5 @@ with st.sidebar:
             )
 
 
-    
+if st.user:
+    st.write(f"Welcome, {st.user.email}!")
