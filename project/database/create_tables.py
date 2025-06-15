@@ -1,5 +1,5 @@
-from project.database.database import Base, engine
-from project.database.models import User, AIModels, Dataset, Subscription
+from database.database import Base, engine
+from database.models import User, AIModels, Dataset, Subscription
 
 __all__ = ['User', 'AIModels', 'Dataset', 'Subscription']
 
